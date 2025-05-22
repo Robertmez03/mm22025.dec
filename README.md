@@ -31,15 +31,15 @@ ld -m elf_i386 resta_enteros.o -o resta_enteros
 ```
 
 **Salida esperada:**
-Result: 00100
-(150 – 30 – 20 = 100)
+- Result: 00100
+- (150 – 30 – 20 = 100)
 
 ### 2) multiplicacion.asm
-**bits** 32
-**Datos**: `num1`, `num2` (8 bits)
-- Producto en AX (16 bits)
-- Convierte el resultado a 4 dígitos hex + salto de línea
-- Imprime con el prefijo “Result: 0x”
+- **bits** 32
+- **Datos**: `num1`, `num2` (8 bits)
+- Producto en `AX` (16 bits)
+- Convierte el resultado a `4` dígitos `hex` + `salto de línea`
+- Imprime con el prefijo `“Result: 0x”`
 
 **Compilar & Ejecutar:**
 ```
@@ -49,12 +49,12 @@ ld -m elf_i386 multiplicacion.o -o multiplicacion
 ```
 
 **Salida esperada:**
-Result: 0x000A
-(10 × 1 = 10, 0x000A)
+- Result: 0x000A
+- (10 × 1 = 10, 0x000A)
 
 ### 3) division.asm
-**bits** 32
-**Interactivo**: pide “Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2):”
+- **bits** 32
+- **Interactivo**: pide “Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2):”
 - Parseo de dos enteros con signo (rutina parse_int)
 - División con signo (idiv), muestra el cociente
 - Imprime “Resultado: ” + cociente en ASCII + salto de línea
@@ -67,9 +67,9 @@ ld -m elf_i386 division.o -o division
 ```
 
 **Ejemplo de uso:**
-Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2):
-25 -4
-Resultado: -6
+- `Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2):`
+- `25 -4`
+- `Resultado: -6`
 
 ## Notas:
 - Todos usan llamadas al sistema Linux vía int 0x80 (sys_read, sys_write, sys_exit).

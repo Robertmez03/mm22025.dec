@@ -7,7 +7,7 @@
 ;   ./division
 
 section .data
-    prompt     db "Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2): ",0xA   ; mensaje al usuario + newline
+    prompt     db "Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2): ",0xA   ; mensaje al usuario + nueva linea
     prompt_len equ $ - prompt                  ; longitud del mensaje
     outmsg     db "Resultado: "                 ; etiqueta antes del resultado
     outmsg_len equ $ - outmsg                  ; longitud de la etiqueta

@@ -31,8 +31,8 @@ ld -m elf_i386 resta_enteros.o -o resta_enteros
 ```
 
 **Salida esperada:**
-- Result: 00100
-- (150 – 30 – 20 = 100)
+- `Result: 00100`
+- `(150 – 30 – 20 = 100)`
 
 ### 2) multiplicacion.asm
 - **bits** 32
@@ -49,8 +49,8 @@ ld -m elf_i386 multiplicacion.o -o multiplicacion
 ```
 
 **Salida esperada:**
-- Result: 0x000A
-- (10 × 1 = 10, 0x000A)
+- `Result: 0x000A`
+- `(10 × 1 = 10)`
 
 ### 3) division.asm
 - **bits** 32

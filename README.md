@@ -54,10 +54,10 @@ ld -m elf_i386 multiplicacion.o -o multiplicacion
 
 ### 3) division.asm
 - **bits** 32
-- **Interactivo**: pide “Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2):”
-- Parseo de dos enteros con signo (rutina parse_int)
-- División con signo (idiv), muestra el cociente
-- Imprime “Resultado: ” + cociente en ASCII + salto de línea
+- **Interactivo**: pide `“Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2):”`
+- Parseo de `dos enteros` con signo `(rutina parse_int)`
+- División con signo `(idiv)`, muestra el cociente
+- Imprime `“Resultado: ”` + `cociente` en `ASCII` + `salto de línea`
 
 **Compilar & Ejecutar:**
 ```

@@ -27,7 +27,7 @@ Desde la raíz del proyecto, para cada archivo `.asm`:
 ```bash
 nasm -f elf32 resta_enteros.asm -o resta_enteros.o
 ld -m elf_i386 resta_enteros.o -o resta_enteros
-./resta_enteros
+./resta_enteros```
 
 **Salida esperada:**
 Result: 00100
@@ -44,7 +44,7 @@ Result: 00100
 ```bash
 nasm -f elf32 multiplicacion.asm -o multiplicacion.o
 ld -m elf_i386 multiplicacion.o -o multiplicacion
-./multiplicacion
+./multiplicacion```
 
 **Salida esperada:**
 Result: 0x000A
@@ -61,7 +61,7 @@ Result: 0x000A
 ```bash
 nasm -f elf32 division.asm -o division.o
 ld -m elf_i386 division.o -o division
-./division
+./division```
 
 **Ejemplo de uso:**
 Ingresa dos numeros Enteros(separado por un espacio. ej: 10 2):
